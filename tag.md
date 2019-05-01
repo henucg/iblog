@@ -5,7 +5,7 @@ permalink: /tag
 ---
 
 <script>
-  var key = location.pathname;
+  var key = decodeURI(location.pathname);
   key = key.substring('/tag/'.length);
   if (key.indexOf('/') != -1) {
     key = '';

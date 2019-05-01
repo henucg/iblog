@@ -1,7 +1,7 @@
 # Site settings
-title: 陈小两的个人博客
-subtitle: 博客副标题
-description: 博客描述
+title: IBlog技术博客
+subtitle: Stay Hungry,Stay Foolish.
+description: 求知若渴，虚心若愚
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # 你的域名
 page_no_title: "No title" # 文章无标题时默认显示内容
@@ -17,8 +17,8 @@ paginate: 10 # 分页大小
 paginate_path: ":num"
 
 # Search settings
-baidu_search: true
-google_search: # true
+baidu_search: # true
+google_search: true
 
 # Menu settings
 menu:
@@ -31,9 +31,6 @@ menu:
   - page: 关于
     directory: about/
     icon: icon-about
-  - page: 历史
-    directory: history/
-    icon: icon-history
 
 # Link settings
 links: # 友情链接

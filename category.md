@@ -5,7 +5,7 @@ permalink: /category
 ---
 
 <script>
-  var key = location.pathname;
+  var key = decodeURI(location.pathname);
   key = key.substring('/category/'.length);
   if (key.indexOf('/') != -1) {
     key = '';
