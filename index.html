@@ -6,7 +6,7 @@ layout: base
 <div class="post">
 
   <h2 class="post-title">
-  	<a href="{{ site.basePath }}/{{ post.url | prepend: site.baseurl }}">
+  	<a href="{{ site.basePath }}{{ post.url | prepend: site.baseurl }}">
   	{% if post.title %}
   		{{ post.title }}
   	{% else %}
@@ -19,7 +19,7 @@ layout: base
   
   <div class="post-content">{{ post.excerpt }}</div>
   
-  <p class="readmore"><a href="{{ site.basePath }}/{{ post.url | prepend: site.baseurl }}">阅读更多</a></p>
+  <p class="readmore"><a href="{{ site.basePath }}{{ post.url | prepend: site.baseurl }}">阅读更多</a></p>
   
 </div>
 {% endfor %}
