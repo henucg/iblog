@@ -1,5 +1,5 @@
 # Site settings
-title: 博客标题
+title: 陈小两的个人博客
 subtitle: 博客副标题
 description: 博客描述
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -34,9 +34,6 @@ menu:
   - page: 历史
     directory: history/
     icon: icon-history
-  - page: 订阅
-    directory: feed.xml
-    icon: icon-rss
 
 # Link settings
 links: # 友情链接
