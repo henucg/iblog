@@ -45,12 +45,12 @@ a:focus {
   clear: both; }
 
 #header {
-  padding: 58px 0 0;
+  padding: 25px 0 0;
   text-align: left;
   border-bottom: 1px solid #ddd;
   position: relative; }
   #header .site-name {
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
     #header .site-name h1 {
       padding: 0;
       margin: 0;
@@ -62,6 +62,7 @@ a:focus {
       #header .site-name #logo span, #header .site-name #logo:hover {
         color: #777; }
     #header .site-name .description {
+      padding-top: 10px;
       margin: .2em 0 0;
       color: #999; }
   #header #nav-menu {
@@ -93,13 +94,12 @@ a:focus {
   #sidebar .widget {
     margin-bottom: 30px; }
     #sidebar .widget .widget-title {
-      color: #6E7173;
       line-height: 2.7;
       margin-top: 0;
       font-size: 16px;
       border-bottom: 1px solid #ddd;
       display: block;
-      font-weight: normal; }
+      font-weight: bold; }
     #sidebar .widget .comments-title {
       color: #6E7173;
       line-height: 2.7;
@@ -896,6 +896,7 @@ i {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
+  color: :#5CACEE;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -923,6 +924,9 @@ i {
 
 .icon-archive:before {
   content: "\e904"; }
+
+.icon-text{
+  font-weight: bold; }
 
 /* post navigator*/
 .post-nav {

@@ -1,6 +1,6 @@
 # Site settings
 title: IBlog技术博客
-subtitle: Stay Hungry,Stay Foolish.
+subtitle: Stay Hungry,Stay Foolish
 description: 求知若渴，虚心若愚
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # 你的域名
