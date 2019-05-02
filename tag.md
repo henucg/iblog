@@ -42,7 +42,7 @@ permalink: /tag
     var items = $('.post-archive a');
     for (var i=0; i<items.length; i++) {
       var item = items[i];
-      if ($(item).attr('key').toLowerCase().indexOf(key.toLowerCase()) == -1) {
+      if ($(item).attr('key').toLowerCase().indexOf(tag[1].toLowerCase()) == -1) {
         $(item.parentElement.parentElement).remove();
       } else {
         $(item.parentElement.parentElement).show();
