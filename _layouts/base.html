@@ -102,8 +102,10 @@
             <div class="widget">
                 <div class="widget-title">相关推荐</div>
                 <ul class="post-list">
-                {% for post in site.related_posts %}
-                  <li class="post-list-item"><a class="post-list-link" href="{{ post.url | prepend: site.baseurl }}">{% if post.title %} {{ post.title }} {% else %} {{ site.page_no_title }} {% endif %}</a></li>
+                {% for relate in site.relates %}
+                  <li class="post-list-item">
+                    <a class="post-list-link" target="_blank" href="{{ relate.url }}">{{ relate.title }} </a>
+                  </li>
                 {% endfor %}
                 </ul>
             </div>
@@ -119,17 +121,14 @@
         </div>
       </div>
       
-      <div id="footer">© 2019
+      <div id="footer">Copyright © 2019
         <a href="{{ site.baseurl }}/." rel="nofollow">{{ site.title }}.</a> 
-        <a rel="nofollow" target="_blank" href="https://github.com/henucg">GitHup</a>
         {% if site.beian %}
         <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/"> {{ site.beian }}.</a>
         {% endif %}
       </div>
       
-      <!--小火箭
       <a id="rocket" href="#top" class="show"></a>
-      -->
       
       <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
       <script src="{{ "/js/totop.js" | prepend: site.baseurl }}" type="text/javascript"></script>

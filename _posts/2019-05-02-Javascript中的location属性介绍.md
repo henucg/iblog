@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Javascript中的location属性介绍"
+title:  "JS中的location属性介绍"
 date:   2019-05-02 17:39:00 +0800
 categories: 笔记
-tags: Javascript location
+tags: JS
 ---
 
 

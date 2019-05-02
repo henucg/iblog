@@ -1,27 +1,23 @@
-maupassant
-==========
+---
+layout: page
+title: About
+permalink: /about/
+---
 
-A simple Jekyll template with great performance on different devices.
+[IBlog博客](https://henucg.github.io/iblog/)
+=================================
 
-![template preview](https://camo.githubusercontent.com/74fd2ccea00a682742515ce1d3725283c3385721/687474703a2f2f6f6f6f2e306f302e6f6f6f2f323031352f31302f32342f353632623562653132313737652e6a7067 "Maupassant template preview")
+是一个简洁的、多设备支持的 Jekyll 博客模板，用于快速搭建个人博客，
+[IBlog博客](https://henucg.github.io/iblog/) 主题基于 maupassant-jekyll
+重新修改和优化，同时参考一些优秀的博客主题，在此表示感谢～  
+<br>
+模板预览：
+![](https://camo.githubusercontent.com/74fd2ccea00a682742515ce1d3725283c3385721/687474703a2f2f6f6f6f2e306f302e6f6f6f2f323031352f31302f32342f353632623562653132313737652e6a7067){:height="400" width="700"}
+<br>
 
-## Install
+2019-05-02
 
-- install renderers
-
-```
-git clone https://github.com/alafighting/maupassant-jekyll.git maupassant
-cd maupassant
-jekyll build
-jekyll server
-```
-
-## Maupassant on different platform:
-
-+ Typecho：https://github.com/pagecho/maupassant/
-+ Octopress：https://github.com/pagecho/mewpassant/
-+ Farbox：https://github.com/pagecho/Maupassant-farbox/
-+ Wordpress：https://github.com/iMuFeng/maupassant/
-+ Hexo: https://github.com/icylogic/maupassant-hexo/
-+ Ghost: https://github.com/LjxPrime/maupassant/
-+ Jekyll: https://github.com/alafighting/maupassant-jekyll/
+### 参考博客：
++ ImKarl:[https://github.com/ImKarl/maupassant-jekyll](https://github.com/ImKarl/maupassant-jekyll)
++ Oukohou:[https://github.com/oukohou/oukohou.github.io](https://github.com/oukohou/oukohou.github.io)
++ Leopardpan:[https://github.com/leopardpan/leopardpan.github.io](https://github.com/leopardpan/leopardpan.github.io)
