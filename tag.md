@@ -10,9 +10,12 @@ permalink: /tag
   if (key.indexOf('/') != -1) {
     key = '';
   }
+
+  var href = decodeURI(location.href);
+  var tag = href.split("=");
 </script>
 
-正在查看 "<script>document.write(key);</script>" 下的文章
+正在查看 "<script>document.write(tag[1]);</script>" 下的文章
 
 <div class="post">
   <div class="post-archive">
