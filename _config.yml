@@ -1,5 +1,5 @@
 # Site settings
-title: IBlog技术博客
+title: IBlog博客
 subtitle: Stay Hungry,Stay Foolish
 description: 求知若渴，虚心若愚
 baseurl: "/iblog" # the subpath of your site, e.g. /blog
@@ -32,13 +32,20 @@ menu:
     directory: about/
     icon: icon-about
 
+# Related Posts
+relates: # 相关推荐
+  - title: GitHup
+    url: https://github.com/henucg
+  - title: 
+    url: 
+  - title: 
+    url: 
+
 # Link settings
 links: # 友情链接
-  - title: site-name1
-    url: http://www.example1.com/
-  - title: site-name2
-    url: http://www.example2.com/
-  - title: site-name3
-    url: http://www.example3.com/
-
-#theme: jekyll-theme-cayman
+  - title: 
+    url: 
+  - title: 
+    url: 
+  - title: 
+    url: 
