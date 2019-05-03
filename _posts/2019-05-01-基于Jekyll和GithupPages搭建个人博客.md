@@ -25,7 +25,7 @@ excerpt:
 ## 3、Githup新建博客仓库
 + 登陆Githup官网：[https://github.com/](https://github.com/){:target="_blank"}
 + 新建仓库iblog（名字可以自己修改），如图所示：
-![]({{site.baseUrl}}/images/blog/20190501_01/0.png)
+![]({{''|site.baseUrl}}/images/blog/20190501_01/0.png)
 + 新建完成之后将仓库clone到本地目录iblog/
 
 ## 4、本地安装Jekyll服务
@@ -45,7 +45,7 @@ excerpt:
    + 或者在Githup上引用别人的模版
 + 修改与调试
    + 解压模版压缩包，将文件里面的内容拷贝到自己的项目目录iblog中，如图：
-   ![]({{site.baseUrl}}/images/blog/20190501_01/1.png){:height="300" width="400"}
+   ![]({{''|site.baseUrl}}/images/blog/20190501_01/1.png){:height="300" width="400"}
       + 其中_layouts目录是模版框架，需要修改样式可以根据自己需要修改里面的文件
       + _posts目录下面放的是博客文件，我用的是markDown格式文件，文件名称：  
       	YYYY-MM-DD-博客名称.md  
@@ -57,7 +57,7 @@ excerpt:
    + 启动：
    `jekyll server`
    + 如果成功显示：
-   ![]({{site.baseUrl}}/images/blog/20190501_01/2.png){:height="300" width="600"}
+   ![]({{''|site.baseUrl}}/images/blog/20190501_01/2.png){:height="300" width="600"}
 + 本地访问
    + 在浏览器中访问：http://127.0.0.1:4000，即可以看到自己博客
 
@@ -66,7 +66,7 @@ excerpt:
 + 配置GithupPages
    + 登陆Githup，找到iblog仓库，点击Settings
    + 选择需要发布在GithupPages上的分支，如果只有一个分支就是master：
-   ![]({{site.baseUrl}}/images/blog/20190501_01/3.png)
+   ![]({{''|site.baseUrl}}/images/blog/20190501_01/3.png)
 + 访问：[https://henucg.github.io/iblog/](https://henucg.github.io/iblog/){:target="_blank"}，路径根据自己的githup名称修改
 + 配置域名
    + 在iblog/目录下添加文件CNAME，在文件里面写上自己的域名即可，例如：www.iblog.com
