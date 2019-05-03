@@ -45,7 +45,7 @@ excerpt:
    + 或者在Githup上引用别人的模版
 + 修改与调试
    + 解压模版压缩包，将文件里面的内容拷贝到自己的项目目录iblog中，如图：
-   ![]({{site.baseUrl}}/assets/20190501_01/1.png){:height="300" width="400"}
+   ![]({{site.url}}/assets/20190501_01/1.png){:height="300" width="400"}
       + 其中_layouts目录是模版框架，需要修改样式可以根据自己需要修改里面的文件
       + _posts目录下面放的是博客文件，我用的是markDown格式文件，文件名称：  
       	YYYY-MM-DD-博客名称.md  
