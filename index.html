@@ -19,9 +19,12 @@ layout: base
   
   <div class="post-content">{{ post.excerpt }}</div>
   
-  <p class="readmore"><a href="{{ post.url | prepend: site.baseurl }}">阅读更多</a></p>
+  <p class="readmore"><a target="_blank" href="{{ post.url | prepend: site.baseurl }}">阅读更多</a></p>
   
 </div>
+
+<hr style="FILTER: alpha(opacity=0,finishopacity=100,style=3)" width="100%" color='#F0F0F0' SIZE=1>
+
 {% endfor %}
 
   
