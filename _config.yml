@@ -1,6 +1,7 @@
 # Site settings
 title: IBlog博客
 subtitle: Stay Hungry,Stay Foolish
+author: CG
 description: 求知若渴，虚心若愚
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.henucg.xyz/" # 你的域名

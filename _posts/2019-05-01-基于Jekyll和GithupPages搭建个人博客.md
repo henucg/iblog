@@ -3,7 +3,7 @@ layout: post
 title:  "基于Jekyll和GithupPages搭建个人博客"
 date:   2019-05-01 17:28:00 +0800
 categories: 笔记
-tags: Jekyll Githup 
+tags: Jekyll Githup
 excerpt: 
    "Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过 Markdown （或者 Textile）  以及 Liquid 转化成一个完整的可发布的静态网站。Jekyll也可以运行在GitHubPages上"
 ---

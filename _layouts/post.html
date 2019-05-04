@@ -1,21 +1,37 @@
 ---
 layout: base
 ---
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="post-meta">
+    	<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    	📅{{ page.date | date: "%Y-%m-%d" }}
+    	</time>
+    	
+    	&nbsp;|&nbsp;📖
+    	{% for categorie in page.categories %}
+        <span>{{categorie}}</span>
+        {% endfor %}
+    	
+    	&nbsp;|&nbsp;🏷️
+    	{% for tag in page.tags %}
+        <span>{{tag}}</span>
+        {% endfor %}
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+
+    <div style="font-style:oblique">
+  		©️版权声明：原创文章，转载引用请标明出处，感谢～
+  	</div>
   </div>
 
+  <!-- 打赏功能 -->
   {% include external.html %}
-
-  <div style="font-style:oblique">
-  	版权声明：原创文章，转载引用请标明出处
-  </div>
 
 </article>

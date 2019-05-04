@@ -28,7 +28,12 @@
         <div class="site-name">
           <h1 class="hidden">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
           <a id="logo" href="{{ site.baseurl }}/.">{{ site.title }}</a>
-          <p class="description">{{ site.subtitle }}</p>
+          <p class="description">
+            {{ site.subtitle }}
+            &nbsp;
+            作者:
+            {{ site.author }}
+          </p>
         </div>
         <div id="nav-menu">
           {% for menu in site.menu %}
@@ -82,7 +87,7 @@
             </div>
 
             <div class="widget">
-              <div class="widget-title">{{ site.sloganTitle }}</div>
+              <div class="widget-title">🚩{{ site.sloganTitle }}</div>
               <ul></ul>
               <div style="font-family:华文行楷;font-size: 18px;">{{ site.sloganContent }}</div>
               <br>
@@ -104,7 +109,7 @@
             </div>
             
             <div class="widget">
-                <div class="widget-title">文章分类</div>
+                <div class="widget-title">📖文章分类</div>
                 <ul class="category-list" style="list-style-type:disc;padding-left:20px; ">
                   {% for category in site.categories %}
                     <li class="category-list-item">
@@ -115,11 +120,11 @@
             </div>
               
             <div class="widget">
-                <div class="widget-title">文章标签</div>
+                <div class="widget-title">🏷️文章标签</div>
                 <div class="tagcloud">
                   <ul style="list-style-type:disc;padding-left:20px; ">
                   {% for tag in site.tags %}
-                      <li style="float:left;width: 50%;">
+                      <li>
                         <a href="{{ "" | prepend: site.baseurl }}/tag?key={{ tag[0] }}" 
                             style="font-size: 13px;">{{ tag[0] }}({{ tag[1] | size }})</a>
                       </li>
@@ -129,7 +134,7 @@
             </div>
 
             <div class="widget">
-                <div class="widget-title">相关推荐</div>
+                <div class="widget-title">💻相关推荐</div>
                 <ul class="post-list"  style="list-style-type:disc;padding-left:20px; ">
                 {% for relate in site.relates %}
                   <li class="post-list-item">
@@ -140,7 +145,7 @@
             </div>
               
             <div class="widget">
-              <div class="widget-title">友情链接</div>
+              <div class="widget-title">🔗友情链接</div>
               {% for link in site.links %}
                 <a href="{{ site.baseurl }}/{{ menu.directory }}"><i class="{{ menu.icon }}"> {{ menu.page }}</i></a>
                 <ul></ul><a href="{{ link.url }}" title="{{ link.title }}" target="_blank">{{ link.title }}</a>
