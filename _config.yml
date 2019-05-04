@@ -10,6 +10,9 @@ email: email@yourdomain.com
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
 plugins: [jekyll-paginate]
 
 # Pageinate settings
@@ -19,6 +22,10 @@ paginate_path: ":num"
 # Search settings
 baidu_search: # true
 google_search: true
+
+# Slogan
+sloganTitle: Slogan
+sloganContent: 求知若渴，虚心若愚
 
 # Menu settings
 menu:
@@ -36,10 +43,6 @@ menu:
 relates: # 相关推荐
   - title: GitHup
     url: https://github.com/henucg
-  - title: 
-    url: 
-  - title: 
-    url: 
 
 # Link settings
 links: # 友情链接
