@@ -261,7 +261,7 @@ Alt text</p>
             <div class="widget">
               <div class="widget-title">Slogan</div>
               <ul></ul>
-              <div style="font-family:隶书;color: ;font-size: 18px;">求知若渴，虚心若愚</div>
+              <div style="font-family:华文行楷;font-size: 18px;">求知若渴，虚心若愚</div>
               <br>
 
               <td style="text-align: center">
@@ -374,6 +374,26 @@ Alt text</p>
       <script src="/js/fancybox.pack.js" type="text/javascript"></script>
       <script src="/js/jquery.fancybox.js" type="text/javascript"></script>
       <link rel="stylesheet" href="/css/jquery.fancybox.css" type="text/css">
+      <script type="text/javascript">
+        // 点击监控事件
+        $(document).bind('click', function(e) {
+          var divDiplay = $('#pay_div').css('display') ;
+
+          if(divDiplay=='block'){
+            var e = e || window.event; //浏览器兼容性 
+            var elem = e.target || e.srcElement;
+            if(elem.id !== 'dashang'){
+              while (elem) { //循环判断至跟节点，防止点击的是div子元素 
+                if (elem.id && (elem.id == 'pay_div' || elem.id == 'dashang')) {
+                  return;
+                }
+                elem = elem.parentNode;
+              }
+              dashangToggle(); //点击的不是div或其子元素 
+            }
+          }
+        });
+      </script>
       
     </div>
 
