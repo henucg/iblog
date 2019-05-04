@@ -49,7 +49,8 @@ excerpt:
       + 其中_layouts目录是模版框架，需要修改样式可以根据自己需要修改里面的文件
       + _posts目录下面放的是博客文件，我用的是markDown格式文件，文件名称：  
       	YYYY-MM-DD-博客名称.md  
-      	Jekyll会自动根据名称解析博客
+      	Jekyll会自动根据名称解析博客  
+      + _config.yml是配置文件   
       + 新建博客只需按照名称规则新建文件放到_posts目录下即可
    + 命令行进入目录/iblog/
    + 编译：
@@ -76,3 +77,8 @@ excerpt:
    + 如果文件名称中的日期超过当前系统时间，则Jekyll不能识别该文件，因此文件中的日期不能大于当前系统日期
 + 静态文件路径问题
    + 本机调试的时候根路径与发布到githup之后根路径可能不一致，导致在本机静态文件可以正常加载，而在githup上无法加载，需要根据实际情况修改路径
++ _config.yml配置解析器  
+   + Jekyll有有三个默认的MarkDown解析器：kramdown,rdiscount,redcarpet，默认使用的是kramdown  
+   + 可以在_config.yml文件中设置  
+   `markdown: kramdown`  
+   来修改解析器

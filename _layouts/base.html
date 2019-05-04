@@ -78,30 +78,50 @@
                 </form>
               {% endif %}
             </div>
+
+            <div class="widget">
+                <div class="widget-title">{{ site.sloganTitle }}</div>
+                <ul></ul>
+                {{ site.sloganContent }}
+                <br><br>
+              <td style="text-align: center">
+                  <a style="color: slategrey"></a>
+                  微信公众号:
+                  <a href="https://mp.weixin.qq.com/s/zOiSudN-7DEi2l7oD9GZpQ"
+                    style="color:darkorange;" target="_blank" title="点击直达微信公众号～～">
+                    <u><b>微听音悦</b></u>
+                  </a>
+              </td>
+            </div>
             
             <div class="widget">
-                <div class="widget-title">分类</div>
+                <div class="widget-title">文章分类</div>
                 <ul class="category-list" style="list-style-type:disc;padding-left:20px; ">
                   {% for category in site.categories %}
                     <li class="category-list-item">
-                      <a class="category-list-link" href="{{ "" | prepend: site.baseurl }}/category?key={{ category[0] }}">{{ category[0] }}</a>
+                      <a class="category-list-link" href="{{ "" | prepend: site.baseurl }}/category?key={{ category[0] }}">{{ category[0] }}({{ category[1] | size }})</a>
                     </li>
                   {% endfor %}
                 </ul>
             </div>
               
             <div class="widget">
-                <div class="widget-title">标签</div>
+                <div class="widget-title">文章标签</div>
                 <div class="tagcloud">
+                  <ul style="list-style-type:disc;padding-left:20px; ">
                   {% for tag in site.tags %}
-                    <a href="{{ "" | prepend: site.baseurl }}/tag?key={{ tag[0] }}" style="font-size: 15px;">{{ tag[0] }}</a>
+                      <li style="float:left;width: 50%;">
+                        <a href="{{ "" | prepend: site.baseurl }}/tag?key={{ tag[0] }}" 
+                            style="font-size: 13px;">{{ tag[0] }}({{ tag[1] | size }})</a>
+                      </li>
                   {% endfor %}
+                  </ul>
                 </div>
             </div>
-              
+
             <div class="widget">
                 <div class="widget-title">相关推荐</div>
-                <ul class="post-list">
+                <ul class="post-list"  style="list-style-type:disc;padding-left:20px; ">
                 {% for relate in site.relates %}
                   <li class="post-list-item">
                     <a class="post-list-link" target="_blank" href="{{ relate.url }}">{{ relate.title }} </a>
