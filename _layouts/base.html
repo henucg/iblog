@@ -125,8 +125,7 @@
                   <ul style="list-style-type:disc;padding-left:20px; ">
                   {% for tag in site.tags %}
                       <li>
-                        <a href="{{ "" | prepend: site.baseurl }}/tag?key={{ tag[0] }}" 
-                            style="font-size: 13px;">{{ tag[0] }}({{ tag[1] | size }})</a>
+                        <a href="{{ "" | prepend: site.baseurl }}/tag?key={{ tag[0] }}">{{ tag[0] }}({{ tag[1] | size }})</a>
                       </li>
                   {% endfor %}
                   </ul>
