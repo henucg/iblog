@@ -24,7 +24,7 @@ permalink: /category
     <ul class="listing" style="display: none;">
       <li>
       <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
-      <a href="{{ post.url | prepend: site.baseurl }}" key="{{ post.categories }}">
+      <a href="{{ post.url | prepend: site.baseurl }}" key="{{ post.categories }}" target="_blank">
       {% if post.title %}
   		{{ post.title }}
   	  {% else %}

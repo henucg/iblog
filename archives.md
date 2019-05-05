@@ -11,7 +11,7 @@ permalink: /archives/
     <ul class="listing">
       <li>
       <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
-      <a href="{{ post.url | prepend: site.baseurl }}">
+      <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">
       {% if post.title %}
   		{{ post.title }}
   	  {% else %}
