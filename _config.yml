@@ -54,3 +54,6 @@ links: # 友情链接
     url: 
   - title: 
     url: 
+
+# baidu setting 百度统计的ID，如果引用此模版，请修改为自己的ID
+baiduId: dfbdfe06cc30f1cf5adb15008fa36c46
