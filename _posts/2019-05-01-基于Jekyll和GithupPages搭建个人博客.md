@@ -72,13 +72,32 @@ excerpt:
 + 配置域名
    + 在iblog/目录下添加文件CNAME，在文件里面写上自己的域名即可，例如：www.iblog.com
 
-## 7、注意点
+## 7、代码块高亮
++ 使用Jekyll默认：
+   + 在代码块前后加上：
+   ![]({{site.url}}/assets/20190501_01/4.png){:width="80%",height="80%"}
+   + linenos：表示显示行数
+
++ 自定义：
+   + _config.yml配置解析器: 
+   ```sh
+   markdown: kramdown
+   kramdown:
+         input: GFM
+   highlighter: rouge
+   ```
+      + Jekyll有有三个默认的MarkDown解析器：kramdown,rdiscount,redcarpet，默认使用的是kramdown 
+      + highlighter表示代码高亮，此处用的是rouge
+      + rouge 是一个纯 Ruby 编写的代码高亮器，可用于 60 多种语言的高亮，其源代码托管在 GitHub上，在其主页文档上了解到可以根据不同的样式生成 css 文件 
+   + rouge使用方式：
+      + 安装：`gem install rouge`
+      + 生成css文件：`rougify style theme_name > rouge.css`
+         + theme_name：主题名称，查看所有主题：`rougify help style`
+         + rouge.css：生成的css文件名称以及目录
+      + 引用css文件：`<link rel="stylesheet" type="text/css" href="{{"/css/rouge.css"}}">`
+
+## 8、注意点
 + _posts文件夹下文件名称：YYYY-MM-DD-博客名称.md
    + 如果文件名称中的日期超过当前系统时间，则Jekyll不能识别该文件，因此文件中的日期不能大于当前系统日期
 + 静态文件路径问题
    + 本机调试的时候根路径与发布到githup之后根路径可能不一致，导致在本机静态文件可以正常加载，而在githup上无法加载，需要根据实际情况修改路径
-+ _config.yml配置解析器  
-   + Jekyll有有三个默认的MarkDown解析器：kramdown,rdiscount,redcarpet，默认使用的是kramdown  
-   + 可以在_config.yml文件中设置  
-   `markdown: kramdown`  
-   来修改解析器
