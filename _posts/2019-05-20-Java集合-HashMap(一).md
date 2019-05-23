@@ -12,6 +12,7 @@ excerpt: "Java1.7中HashMap的实现方式"
 
 ## 2、HashMap简介
 + HashMap是存储对象Entry是一个键值对（key-value），key与value都可以为null
++ key为null的Entry直接放在数组的第一个位置table[0]
 + Entry对象有四个属性：hash,key,value,next
 + HashMap继承了AbstractMap，实现了Map、Cloneable、Serializable接口
 + HashMap默认容量为16，加载因子默认为0.75，初始化时可以自己指定初始容量，但是容量大小会自动设置为2的指数次方
