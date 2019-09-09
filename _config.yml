@@ -21,8 +21,8 @@ paginate: 10 # 分页大小
 paginate_path: ":num"
 
 # Search settings
-baidu_search: # true
-google_search: true
+baidu_search: true
+google_search: # true
 
 # Slogan
 sloganTitle: Slogan

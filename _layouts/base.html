@@ -76,7 +76,7 @@
               {% if site.baidu_search %}
                 <form action="//www.baidu.com/s?gpc=stf" method="get" accept-charset="utf-8" target="_blank" class="search-form">
                   <input type="text" name="q1" maxlength="20" placeholder="Search" class="search-form-input">
-                  <input type="hidden" name="q6" value="{{ site.url }}">
+                  <!--<input type="hidden" name="q6" value="{{ site.url }}">-->
                 </form>
               {% endif %}
               {% if site.google_search %}
@@ -93,17 +93,21 @@
               <div style="font-family:华文行楷;font-size: 18px;">{{ site.sloganContent }}</div>
               <br>
 
-              <td style="text-align: center">
+              <td style="text-align: center;">
                   公众号:
-                  <a href="https://mp.weixin.qq.com/s/zOiSudN-7DEi2l7oD9GZpQ"
-                    style="color:darkorange;" target="_blank" title="点击直达微信公众号～～">
+                  <a id="wechatLink" href="https://mp.weixin.qq.com/s/fbg81XP9gTSUX2Ipfgc4fQ"
+                    style="color:darkorange;" target="_blank" title="点击直达微信公众号～">
                     <u><b>微听音悦</b></u>
                   </a>
+
+                  <div id="wechatDiv" style="display: none;">
+                    <img src="{{ site.baseurl }}/images/wechat/wechat.png" style="width: 150px;"/>
+                  </div>
               </td>
 
-              <br><br>
+              <p/>
 
-              <td style="text-align: center">
+              <td style="text-align: center;">
                   邮&nbsp;&nbsp;&nbsp;箱:
                   <u><b>{{ site.email }}</b></u>
               </td>
@@ -188,6 +192,14 @@
             }
           }
         });
+
+        $("#wechatLink").hover(function () {
+            $("#wechatDiv").show(1000);
+            //$("#wechatDiv").slideDown();
+        }, function () {
+            $("#wechatDiv").hide(1000);
+            //$("#wechatDiv").slideUp();
+        })
       </script>
 
       <!-- 百度统计 -->
