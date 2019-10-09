@@ -78,7 +78,7 @@ location对象的用处不只表现在它保存着当前文档的信息，还表
       + 结果："http://www.baidu.com?name=zhang@xiao@jie&order=1"  
       
 ## 6、参考
-+ [https://www.jb51.net/article/65963.htm](https://www.jb51.net/article/65963.htm){:target="_blank"}
-+ [https://blog.csdn.net/luofeng457/article/details/70214101](https://blog.csdn.net/luofeng457/article/details/70214101){:target="_blank"}
-+ [https://www.cnblogs.com/luckyuns/p/6396701.html](https://www.cnblogs.com/luckyuns/p/6396701.html){:target="_blank"}
-+ [https://www.cnblogs.com/z-one/p/6542955.html](https://www.cnblogs.com/z-one/p/6542955.html){:target="_blank"}
++ https://www.jb51.net/article/65963.html
++ https://blog.csdn.net/luofeng457/article/details/70214101
++ https://www.cnblogs.com/luckyuns/p/6396701.html
++ https://www.cnblogs.com/z-one/p/6542955.html

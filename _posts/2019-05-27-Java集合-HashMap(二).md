@@ -350,5 +350,5 @@ final Node<K,V> getNode(int hash, Object key) {
 + JDK1.7的时候使用的是数组+ 单链表的数据结构。但是在JDK1.8及之后时，使用的是数组+链表+红黑树的数据结构（当链表的深度达到8的时候，也就是默认阈值，就会自动扩容把链表转成红黑树的数据结构来把时间复杂度从O（N）变成O（logN）提高了效率）
 
 ## 参考
-+ [https://blog.csdn.net/qazwyc/article/details/76686915](https://blog.csdn.net/qazwyc/article/details/76686915){:target="_blank"}
-+ [https://www.jianshu.com/p/ee0de4c99f87](https://www.jianshu.com/p/ee0de4c99f87){:target="_blank"}
++ https://blog.csdn.net/qazwyc/article/details/76686915
++ https://www.jianshu.com/p/ee0de4c99f87

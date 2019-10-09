@@ -17,6 +17,6 @@ permalink: /about/
 2019-05-02
 
 ### 参考博客：
-+ ImKarl:[https://github.com/ImKarl/maupassant-jekyll](https://github.com/ImKarl/maupassant-jekyll){:target="_blank"}
-+ Oukohou:[https://github.com/oukohou/oukohou.github.io](https://github.com/oukohou/oukohou.github.io){:target="_blank"}
-+ Leopardpan:[https://github.com/leopardpan/leopardpan.github.io](https://github.com/leopardpan/leopardpan.github.io){:target="_blank"}
++ ImKarl:https://github.com/ImKarl/maupassant-jekyll
++ Oukohou:https://github.com/oukohou/oukohou.github.io
++ Leopardpan:https://github.com/leopardpan/leopardpan.github.io

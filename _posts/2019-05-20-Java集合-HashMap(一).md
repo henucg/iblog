@@ -507,4 +507,4 @@ while (iterator.hasNext()) {
 hashCode方法，则会导致业务上需要相同的对象在散列表中存取不一致，反之亦然，所以必定要两个方法一起重写
 
 ## 7、参考
-[https://www.cnblogs.com/skywang12345/p/3310835.html](https://www.cnblogs.com/skywang12345/p/3310835.html){:target="_blank"}
++ https://www.cnblogs.com/skywang12345/p/3310835.html
