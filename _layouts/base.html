@@ -215,8 +215,10 @@
       </script>  
 
       <script>
-        var date = document.write(new Date().getFullYear());
-        document.getElementById("year").innerHTML = date;
+        window.onload = function(){
+          var date = document.write(new Date().getFullYear());
+          document.getElementById("year").innerHTML = date;
+        }
       </script>
     </div>
 
