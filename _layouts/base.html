@@ -159,7 +159,8 @@
         </div>
       </div>
       
-      <div id="footer">Copyright © 2019
+      <div id="footer">Copyright © 
+        <span id="year"></span>
         <a href="{{ site.baseurl }}/." rel="nofollow">{{ site.title }}.</a> 
         {% if site.beian %}
         <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/"> {{ site.beian }}.</a>
@@ -212,6 +213,11 @@
           s.parentNode.insertBefore(hm, s);
         })();
       </script>  
+
+      <script>
+        var date = document.write(new Date().getFullYear());
+        document.getElementById("year").innerHTML = date;
+      </script>
     </div>
 
   </body>
